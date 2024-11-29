@@ -52,9 +52,9 @@ def extract_text_from_image(image_path: str) -> Dict[str, Any]:
 
     # Parse and return the JSON response
     extracted_text = json.loads(response.content[0].text)
-    
+
     return extracted_text
 
 # Example usage:
-# result = extract_text_from_image("path/to/your/image.jpg")
-# print(result)
+ result = extract_text_from_image("path/to/your/image.jpg")
+ print(result)
